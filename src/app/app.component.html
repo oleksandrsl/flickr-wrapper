@@ -1,0 +1,9 @@
+<header>
+    <app-header [user]="user"></app-header>
+</header>
+<nav class="nav">
+    <a class="nav-link" [routerLink]="['/']" routerLinkActive="active">Photos</a>
+    <a class="nav-link" [routerLink]="['/history']" routerLinkActive="active">History</a>
+</nav>
+
+<router-outlet></router-outlet>

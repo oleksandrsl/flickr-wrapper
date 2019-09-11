@@ -1,0 +1,9 @@
+
+<div class="card m-2" style="width: 18rem;">
+    <img [src]="image.imageUrl()" class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title">{{image.title}}</h5>
+      <input *ngIf="!image.liked" class="btn btn-success" type="button" value="Like" (click)="like()">
+      <input *ngIf="image.liked" class="btn btn-danger" type="button" value="Unlike" (click)="unlike()">
+    </div>
+  </div>

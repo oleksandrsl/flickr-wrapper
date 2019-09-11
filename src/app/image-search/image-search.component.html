@@ -1,0 +1,5 @@
+<app-search-box (loading)="loading = $event" (results)="updateResults($event)"></app-search-box>
+<span *ngIf="loading">Loading..</span>
+<div class="d-flex flex-row flex-wrap m-5">
+    <app-search-result *ngFor="let img of results" [image]=img></app-search-result>
+</div>
